@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+</head>
+<body>
+    <h1 align="center">Tienda de Ropa Online</h1>
+    <form>
+		<fieldset>
+			<legend>Información del cliente</legend>
+        <table align="center">
+        <tr>
+			<th><label for="Nombre" >Nombre:</label><br>
+			<input required type="text" name="name" id="name" maxlength="20" placeholder="Nombre"></th>
+
+			<th><label for="Ap">Apellido paterno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20" placeholder="Apellido paterno"></th>
+			
+			<th><label for="Am">Apellido materno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20"placeholder="Apellido materno"></th> 
+        </tr>
+        </table>
+        <table align="center">
+        <tr>
+            <th><label for="Nusuario">Nombre de usuario:</label><br>
+			<input type="text" name="Am" id="Am" maxlength="20" placeholder="Nombre de usuario"></th>
+
+			<th><label for="pass">Contraseña:</label><br>
+			<input  required type="password" placeholder="Pasword"></th>
+
+			<th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"></th>
+        </tr>
+        </table>
+		</fieldset>
+	</form>
+	
+	<form>
+		<fieldset>
+			<legend>Datos de Facturación</legend>
+			<table align="center">
+				<tr>
+			<th><label for="Calle">Calle:</label><br>
+			<input type="text" name="adress" id="adress"  placeholder=" Calle"><br><br></th>
+
+			<th><label for="NE">Número exterior:</label><br>
+			<input type="number" name="NE" id="NE" placeholder="Número exterior"><br><br></th>
+
+			<th><label for="col">Colonia:</label><br>
+			<input type="text" name="col" id="col" placeholder="Colonia"><br><br></th>
+				</tr>
+			</table>
+
+		<table align="center">
+			<tr>
+			<th><label for="Email">Email:</label>
+			<input required type="email"  name="mail" id="mail" placeholder="Correo electrónico"></th>
+
+			<th><label for="CP">Código postal:</label>
+			<input type="number" name="CP" id="CP" placeholder="C.P"></th>
+
+			<th><label for="RFC">RFC:</label>
+			<input required type="text" name="RFC" id="RFC" placeholder="RFC"></th>
+			</tr>
+		</table>
+		<table align="center">
+			<tr>
+			<th><label for="FechaV">Fecha de Venta:</label>
+            <input type="date" name="FechaV" id="FechaV" ></th>
+
+			<th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"></th>
+			</tr>
+		</table>			
+		</fieldset>
+	</form>
+	
+	<form>
+		<fieldset>
+			<legend>Datos del artículo adquirido</legend>
+			<table align="center">
+				<tr>
+			<th><label for="Ropa">Tipo:</label><br>
+				<select size="5"  name="Ropa" id="Ropa" multiple>
+					<option>Vestido</option>
+					<option>Falda</option>
+					<option>Pantalón</option>
+					<option>Playera</option>
+					<option>Camisa</option>
+				</select></th>
+			<th><label>Talla:</label><br>
+			<input type="checkbox" name="talla" value="chico">Chico <br>
+			<input type="checkbox" name="talla" value="mediano">Mediano <br>
+			<input type="checkbox" name="talla" value="grande">Grande <br></th>
+
+			<th><label for="colores">Selecciona el color: </label> <br>
+            <input type="color" name="colores" id="colores"><br><br>
+
+			<input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"></th>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	
+</body>
+</html>
