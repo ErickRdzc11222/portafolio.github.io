@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cinepolis</title>
+</head>
+<body>
+    <h1 align="center">Formulario de Cinepolis</h1>
+    <form method="post" enctype="text/plain" action="">
+		<fieldset>
+			<legend>Información del cliente</legend>
+
+			<label for="Nombre" >Nombre:</label><br>
+			<input required type="text" name="name" id="name" maxlength="20" placeholder="Nombre"><br><br>
+
+			<label for="Ap">Apellido paterno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20" placeholder="Apellido paterno"><br><br>
+			
+			<th><label for="Am">Apellido materno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20"placeholder="Apellido materno"><br><br> 
+
+            <th><label for="Nusuario">Nombre de usuario:</label><br>
+			<input type="text" name="Am" id="Am" maxlength="20" placeholder="Nombre de usuario"><br><br>
+
+            <label for="Email">Email:</label><br>
+            <input required type="email"  name="mail" id="mail" placeholder="Correo electrónico"><br><br>
+
+			<th><label for="pass">Contraseña:</label><br>
+			<input  required type="password" placeholder="Pasword"><br><br>
+
+			<th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"><br>
+		</fieldset>
+	</form>
+
+    <form method="post" enctype="text/plain" action="">
+        <fieldset>
+            <legend>Compra de Boletos</legend>
+
+            <label for="Hora y Fecha">Fecha y Hora</label><br>
+            <input required type="datetime-local" name="hora" id="hora"><br>
+
+            <label for="NumB">Cantidad de  boletos:</label><br>
+            <input required type="number" name="NumB" id="NumB" placeholder="Boletos"><br><br>
+            
+            <label for="Peliculas">Peliculas en taquilla:</label><br>
+				<select required size="5"  name="Pelis" id="Pelis">
+					<option>El gato con botas 2</option>
+					<option>Ant-Man 3 Quantunmania</option>
+					<option>Avatar 2</option>
+					<option>Llaman a la puerta</option>
+					<option>The Amazing Mauricie</option>
+			</select>
+
+            <h3>Metodo de Pago</h3>
+            <input type="radio" name="MP" id="MP" value="TC">
+            <label for="MP">Tarjeta de Credito</label><br>
+
+            <input type="radio" name="MP" id="MP" value="TD">
+            <label for="MP">Tarjeta de Debito</label><br>
+
+            <input type="radio" name="MP" id="MP" value="E">
+            <label for="MP">Efectivo</label><br><br>
+
+            <label for="Comprobante">Comprobante de Pago</label><br>
+            <input type="file" name="pago" id="pago"><br><br>
+
+            <label for="Calif">Califica el servicio</label><br>
+            <input type="range" id="calif" name="calif" min="0" max="10" value="5"><br>
+
+            <label for="sugiere">Sugerencias:</label><br>
+            <textarea name="sugiere" id="sugiere" cols="30" rows="10"></textarea><br>
+            
+            <label for="Telefono">Telefono</label>
+            <input type="tel" name="Telefono" id="Telefono"><br><br>
+
+            <label for="buscar">Buscar</label>
+            <input type="search" name="buscar" id="buscar"><br><br>
+
+            <th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+            <input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"><br>
+
+        </fieldset>
+    </form>
+</body>
+</html>
