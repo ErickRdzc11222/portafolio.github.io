@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(218, 187, 218);
+}
+#uno{
+    background-color: rgb(208, 240, 208);
+}
+#dos{
+    background-color: rgb(208, 240, 208);
+}
+#titulo1{
+    color: blueviolet;
+    font-size: 30px;
+    font-family:monospace;
+}
+#parr1{
+    color: forestgreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+h2{
+    color: blue;
+    font-size: 30px;
+}
+#tit4{
+    color: blueviolet;
+    font-size: 30px;
+    font-family:monospace;
+}
