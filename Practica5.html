@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="practica5.css">
+</head>
+<body>
+    <h1 id="T1" align="center">Servicios de Internet y Telefonia.</h1>
+    <h1 align="center">Contrato de Servicios</h1>
+    <form>
+		<fieldset>
+			<legend>Datos del cliente</legend>
+        <table align="center">
+        <tr>
+			<th><label for="Nombre" >Nombre:</label><br>
+			<input required type="text" name="name" id="name" maxlength="20" placeholder="Nombre"></th>
+
+			<th><label for="Ap">Apellido paterno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20" placeholder="Apellido paterno"></th>
+			
+			<th><label for="Am">Apellido materno:</label><br>
+			<input required type="text" name="Am" id="Am" maxlength="20"placeholder="Apellido materno"></th> 
+        </tr>
+        <tr>
+            <td><label for="Ciudad">Ciudad</label><br>
+                    <select size="5"  name="Ciudad" id="Ciudad" multiple>
+                        <option>San luis Potosí</option>
+                        <option>Matehuala</option>
+                        <option>Cd. Valles</option>
+                        <option>Queretaro</option>
+                        <option>Guanajuato</option>
+                    </select>
+            </td>
+            <td>
+                <input type="submit" name="enviar" id="enviar" value="Enviar Formulario"><br><br>
+                    <input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario">
+            </td>
+        </tr>
+        </table>
+		</fieldset>
+	</form>
+	
+	<form>
+		<fieldset>
+			<legend>Servicios a Contratar</legend>
+			<table align="center">
+				<tr>
+			<th>>Selecciona el tipo de servicio a contratar</th>
+                </tr>
+            <td>
+                <label for="Linea">Linea Telefonica</label>
+                <input type="checkbox" name="Linea" id="Linea" value="LT" checked>
+            </td>
+            <td>
+                <label for="Int">Servicio de Internet</label>
+                <input type="checkbox" name="Int" id="Int" value="Int" checked>
+            </td>
+			</tr>
+            <tr>
+			<th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"></th>
+			</tr>
+		</table>			
+		</fieldset>
+	</form>
+	
+	<form>
+		<fieldset>
+			<legend>Forma de pago</legend>
+			<table align="center">
+				<tr>
+			<th>
+               <h2 align="left">Elige el metodo de Pago</h2> 
+               <h4 align="left">
+                <label for="TDC">TDC:</label>
+                <input type="radio" name="TDC" id="TDC" value="TDC"><br>
+            </h4>
+                <h4 align="left">
+                <label for="TD">Tarjeta de Débito: </label>
+                <input checked type="radio" name="TD" id="TD" value="TD"><br>
+            </h4>
+                <h4 align="left">
+                <label for="PE">Pago en Efectivo: </label>
+                <input type="radio" name="PE" id="PE" value="PE"><br>
+            </h4>
+                <h4 align="left">
+                <label for="cheque">Pago Mediante Cheque: </label>
+                <input type="radio" name="cheque" id="cheque" value="cheque"><br>
+            </h4>
+                <h4 align="left">
+                <label for="TB">Transferencia Bancaria: </label>
+                <input type="radio" name="TB" id="TB" value="TB"><br>
+            </h4>
+                <h4 align="left">
+                <label for="DB">Deposito Bancario: </label>
+                <input type="radio" name="DB" id="DB" value="DB"><br>
+            </h4>
+                <h4 align="left">
+                <label for="oxxo">Pago en Oxxo: </label>
+                <input type="radio" name="oxxo" id="oxxo" value="oxxo"><br>
+            </h4>
+            </th>
+			<th>
+			<input type="submit" name="enviar" id="enviar" value="Enviar Formulario"><br><br>
+			<input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario">
+            </th>
+			</tr>
+			</table>
+		</fieldset>
+	</form>
+    <h2 align="center">Practica 5</h2>
+    <h3 align="center">HTML 5 y CSS 3</h3>
+    <h3 align="center">Primavera 2023</h3>
+    <h3 id="namemy" align="center">RODRIGUEZ CARBAJAL ERCK - 182508</h3>
+	
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(104, 103, 103);
+    color:white;
+}
+#T1{
+    color:rgb(181, 181, 181);
+    font-family: monospace;
+    font-size: 30px;
+}
+#namemy{
+    color:dodgerblue;
+}
