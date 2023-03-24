@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="icon" type="image/jpg" href="img/logo.jpg"/>
+    <link rel="stylesheet" href="restaurantes.css">
+</head>
+
+<body background="img/portada.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;">
+    <h1>Contactanos</h1>
+    <form method="post" action="" enctype="text/plain">
+        <fieldset>
+            <legend>
+                Informacion del Visitante
+            </legend>
+            
+            <label for="usuario">Nombre del Usuario:</label>
+            <input type="text" name="usuario" id="usuario" maxlength="12"
+            placeholder="Usuario" size="12" title="Nombre de usuario"/></br>
+            
+            <label for="Nombre">Nombre</label>
+            <input required type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Nombre"/></br>
+            
+            <label for="Apellido Paterno">Apellido Paterno</label>
+            <input type="text" name="Ap" id="Ap" maxlength="30" placeholder="Apellido Paterno"/></br>
+            
+            <label for="Apellido Materno">Apellido Materno</label>
+            <input type="text" name="Am" id="Am" maxlength="30" placeholder="Apellido Materno"/></br>
+            
+            <label for="email">Correo Electronico:</label>
+            <input required type="email" name="correo" id="correo" placeholder="Correo Email"><br>
+            
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" maxlength="15" id="pass" required placeholder="Contraseña"/></br>
+            
+            <label for="sugiere">Sugerencias:</label><br>
+            <textarea required name="sugiere" id="sugiere" cols="30" rows="10"></textarea><br>
+
+            <label for="Calif">Califica el servicio</label>
+            <input type="range" id="calif" name="calif" min="0" max="10" value="5"> <br>
+
+            <h3>Indique su genero</h3>
+            <input type="radio" name="genero" id="genero" value="F">
+            <label for="genero">Femenino</label><br>
+
+            <input type="radio" name="genero" id="genero" value="M">
+            <label for="genero">Masculino</label><br>
+
+            <th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+            <input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"><br>
+        </fieldset>
+    </form>
+</body>
+</html>
