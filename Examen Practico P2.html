@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Practico P2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <style>
+        @font-face{
+            font-family: "Fuente2";
+            src: url("fuentes/Pacifico/Pacifico-Regular.ttf") format("truetype");
+        }
+        @font-face{
+    font-family: "fuente3";
+    src: url("fuentes/Great_Vibes/GreatVibes-Regular.ttf") format("truetype");
+        }
+        #titulo {
+			position: absolute;
+			background-color: #4CAF50;
+			border-radius: 10px;
+			padding: 10px;
+			color: white;
+            top: 6px;
+            right: 150px;
+            font-family: "fuente2",cursive;
+
+		}
+
+		nav a {
+			float: left;
+			display: block;
+			color:darksalmon;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 17px;
+            font-family: "fuente3";
+		}
+
+		nav a:hover {
+			background-color: #4CAF50;
+			color:darksalmon;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+			background-color: black;
+		}
+
+		.dropdown .dropbtn {
+			cursor:pointer;
+			font-size: 17px;    
+			border: none;
+			outline: none;
+			color:cornflowerblue;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+			font-family: "fuente2";
+			font-size: 20px;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn {
+			background-color: #4CAF50;
+			color: white;
+			margin: 0;
+			padding: 14px 16px;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 226.5px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: rgb(255, 34, 34);
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			font-size: 20px;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #c2ffd0;
+			color: blue;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+    </style>
+</head>
+<body  background="img/cielo-mar-naturaleza-nube-wallpaper-preview.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;"></body>>
+<h1 id="titulo">Lo mejor de la playa</h1>
+    <div class="dropdown">
+        <button class="dropbtn">Servicios que se ofrecen
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#">Hospedaje</a>
+            <a href="#">Restaurante</a>
+            <a href="#">Gimnasio</a>
+			<a href="#">Albercas</a>
+
+        </div>
+    </div> 
+</body>
+</html>
