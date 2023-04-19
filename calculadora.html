@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora js</title>
+    <script src="calculadora.js"></script>
+    <style>
+        #calcu{
+            display: block;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #124;
+            text-align: center;
+            margin: 15px auto;
+            /*Degradado Radial: top, bottom, rigth, left*/
+            background: -moz-radial-gradient(center,ellipse, #335d70 0%,rgb(9, 25, 58) 100%);
+            background: -webkit-radial-gradient(center,ellipse, #335d70 0%,rgb(9, 25, 58) 100% );
+            background: radial-gradient(center,ellipse, #335d70 0%,rgb(9, 25, 58) 100% );
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Java Script (Calculadora) </h3>
+    <div>
+        <form method="post" enctype="text/plain">
+            <input id="calcu" type="button" name="sumar" value="Suma de Numeros" onclick="suma()"><br>
+            <input id="calcu" type="button" name="restar" value="Resta de Numeros" onclick="resta()"><br>
+            <input id="calcu" type="button" name="multiplicar" value="Multiplicación" onclick="multiplica()"><br>
+            <input id="calcu" type="button" name="dividir" value="División" onclick="divide()"><br>
+            <input id="calcu" type="button" name="posinega" value="Positivo O Negativo" onclick="posneg()"><br>
+        </form>
+    </div>
+</body>
+</html>
