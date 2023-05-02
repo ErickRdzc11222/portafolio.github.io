@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Blog de Comentarios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Agrega aquí tus estilos de diseño */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    #cajaformulario {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input[type="button"] {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+#cajadatos {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#cajadatos div {
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#eliminar {
+  background-color: #f44336;
+}
+
+#eliminar:hover {
+  background-color: #d32f2f;
+}
+</style>
+</head>
+<body background="img/portada.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;">
+  <h1>Blog de Comentarios</h1>
+  <h1>Sabores de San Luis</h1>
+  <section id="cajaformulario">
+    <form name="formulario">
+      <label for="clave">Clave:</label>
+      <input type="text" name="clave" id="clave">
+      <label for="texto">Valor:</label>
+      <textarea name="texto" id="texto"></textarea>
+      <input type="button" name="guardar" id="guardar" value="Guardar">
+      <input type="button" name="eliminar" id="eliminar" value="Borrar datos">
+    </form>
+  </section>
+  <section id="cajadatos">
+    Aún no has registrado información
+  </section>
+  <script>
+    var boton = document.getElementById('guardar');
+    boton.addEventListener('click', nuevoitem, false);
+    mostrar();
+    var botonEliminar = document.getElementById('eliminar');
+botonEliminar.addEventListener('click', elimina, false);
+
+mostrar();
+
+function nuevoitem() {
+  var clave = document.getElementById('clave').value;
+  var valor = document.getElementById('texto').value;
+  localStorage.setItem(clave, valor);
+  mostrar();
+  document.getElementById('clave').value = '';
+  document.getElementById('texto').value = '';
+}
+
+function mostrar() {
+  var cajadatos = document.getElementById('cajadatos');
+  cajadatos.innerHTML = '';
+  for (var f = 0; f < localStorage.length; f++) {
+    var clave = localStorage.key(f);
+    var valor = localStorage.getItem(clave);
+    cajadatos.innerHTML += '<div>' + clave + ' - ' + valor + '</div>';
+  }
+}
+
+function elimina() {
+  if (confirm('¿Estás seguro de que deseas borrar los datos?')) {
+    localStorage.clear();
+    mostrar();
+  }
+}
+  </script>
+</body>
+</html>
+
+
+
