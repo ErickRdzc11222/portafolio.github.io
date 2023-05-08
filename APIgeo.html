@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de API web Geolocation</title>
+    <script>
+        //Define una funcion llamada Obtener Ubicación
+        function obtenerUbicacion() {
+            //Verifica si el navegador del usuario soporta la API
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(posicion){
+                    var latitud = posicion.coords.latitude;
+                    var longitud = posicion.coords.longitude;
+
+                    alert('Tu Ubicacion Actual es:', + latitud + ',' + longitud);
+                });
+            }else[
+                alert('Tu Navegador No Soporta la API web Geolocation')
+            ]
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejemplo de la API web Geolocation</h1><br>
+    <p>Haz click en el boton para obtener tu Ubicacion actual</p><br>
+    <button onclick="obtenerUbicacion()">Obtener Ubicacion</button><br>
+</body>
+</html>
