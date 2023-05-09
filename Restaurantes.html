@@ -7,6 +7,14 @@
     <title>Reseñas de Restaurantes</title>
     <link rel="icon" type="image/jpg" href="img/logo.jpg"/>
     <link rel="stylesheet" href="restaurantes.css">
+    <script type="text/javascript">
+        var vsid = "si253049bb965e5";
+        (function() { 
+        var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
+         vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
+        })();
+       </script>
 </head>
 
 <body background="img/portada.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;">
@@ -32,16 +40,37 @@
     <ul>
       <li id="cont"><a href="contactanos.html">Contacto y Sugerencias</a></li>
       <li id="cont"><a href="ayuda.html">Ayuda General</a></li>
-      <li id="cont"><a href="Blog.html">Blog de Comentarios Personales</a></li>
+      <li id="cont"><a href="Blog.html">Blog de Comentarios Personales</a></li><br><br><br>
 
-      <script type="text/javascript">
-        var vsid = "si253049bb965e5";
-        (function() { 
-        var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
-         vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
-        })();
-       </script>
+      <h1>API WEB history</h1>
+<h2>The history.back() Method</h2>
 
+<button onclick="history.back()">Pagina Anterior</button>
+<button onclick="history.forward()">Pagina Siguiente</button>
+<button onclick="history.go(-2)">Dos Paginas Anteriores</button><br><br>
+
+<h3>Explicación sobre la API.</h3>
+
+<p>La API web History de HTML es una herramienta que permite manipular y acceder al historial del navegador web del usuario.
+    Esta API permite a los desarrolladores web controlar la navegación del usuario, así como también facilita la implementación 
+    de funcionalidades como el botón de retroceso o adelanto en la navegación.</p>
+
+<h3>Implementacion de la API.</h3>
+
+<p>La implementación de la API web History es muy sencilla. Se puede acceder a ella utilizando el objeto history del objeto global window. 
+    Este objeto tiene varios métodos y propiedades útiles, como por ejemplo back(), que permite al usuario volver a la página anterior, o pushState(), 
+    que permite al desarrollador web agregar una nueva entrada al historial del navegador.</p>
+
+<h3>Importancia de la API.</h3>
+
+<p>La API web History es importante porque permite a los desarrolladores web crear aplicaciones más sofisticadas y mejorar la experiencia del usuario. 
+    Por ejemplo, si el usuario hace clic en un enlace dentro de una aplicación web, en lugar de cargar una nueva página, el desarrollador puede usar la API 
+    para cargar el nuevo contenido de forma dinámica sin tener que cargar una nueva página. </p>
+
+<h3>Explicación sobre la API.</h3>
+
+<p>En una página principal de reseñas de restaurantes, la API web History puede ser muy útil para mejorar la navegación del usuario. Por ejemplo, 
+    se puede utilizar la API para crear un botón de retroceso personalizado que permita al usuario volver a la página anterior sin tener que hacer 
+    clic en el botón de retroceso del navegador. </p>
 </body>
 </html>
