@@ -1,3 +1,83 @@
-body{
-    color:crimson;
-}
+body {
+    background-image: url("img/portada.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #FF0000;
+  }
+  
+  h1, h2, h3 {
+    color: #FF0000;
+    text-align: center;
+  }
+  
+  hr {
+    border: 1px solid #FF0000;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    color:blue;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: #FF0000;
+    transition: background-color 0.3s ease;
+    border: 1px solid #FF0000;
+  }
+  
+  #Inicio a {
+    font-weight: bold;
+  }
+  
+  #cont {
+    clear: both;
+  }
+  
+  #cont a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border: none;
+  }
+  
+  #cont a:hover {
+    background-color: transparent;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  button {
+    background-color: #FF0000;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #FFF;
+    color: #FF0000;
+    transition: background-color 0.3s ease;
+  }
+  
