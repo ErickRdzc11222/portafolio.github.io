@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cuestionario / Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: "Roboto Condensed", sans-serif;
+			color: #333;
+		}
+		h1 {
+			font-size: 36px;
+			margin: 20px 0;
+			text-align: center;
+			font-family: "Charmonman", cursive;
+		}
+		h2 {
+			font-size: 24px;
+			margin: 20px 0;
+			text-align: center;
+			font-weight: normal;
+		}
+		form {
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+			background-color: #fff;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 10px 0;
+		}
+		input[type="radio"] {
+			margin-right: 10px;
+		}
+		input[type="button"] {
+			margin: 20px 0;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		input[type="button"]:hover {
+			background-color:darkorchid;
+		}
+		p {
+			margin: 10px 0;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		iframe {
+			display: block;
+			margin: 20px auto;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<script>
+var total;
+function califica()
+    {var total=0;
+    	for (var x=1;x<=4;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Responde la encuesta</h1>
+	<h2>TRIVIA FUTBOL</h2>
+<form>
+<div id="contiene">
+	
+	<ul>
+
+		<li>Hubo dos trofeos para la Copa del Mundo. ¿Cómo se llamaba el primero?</li>
+		<input type="radio" name="r1" id="r1" value="5"/>Trofeo Jules Rimet<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Copa Oro del Mundo<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Champions of the world<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>Copa de Campiones del Mundo<br/>
+		
+		<li>¿Qué selección ganó la primera Copa del Mundo (1930)?</li>
+		<input type="radio" name="r2" id="r2" value="0"/>Brasil<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Portugal<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>Uruguay<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>Francia<br/>
+
+		<li>¿Qué selección tiene más títulos en la Copa del Mundo?</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Brasil<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Portugal<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Uruguay<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>Francia<br/>
+
+        <li>¿En qué Copa del Mundo Diego Maradona firmó la famosa 'Mano de Dios'?</li>
+		<input type="radio" name="r4" id="r4" value="0"/>Mexico 1970<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Suiza 1954<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>Inglaterra 1966<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>Mexico 1986<br/>
+	</ul>
+	
+</div>
+<input type="button" value="Calificar" onclick="califica()">
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
