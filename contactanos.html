@@ -1,57 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel="icon" type="image/jpg" href="img/logo.jpg"/>
+    <link rel="icon" type="image/jpg" href="img/logo.jpg" />
     <link rel="stylesheet" href="restaurantes.css">
+    <style>
+        body {
+            background-image: url("img/portada.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+            color: blueviolet;
+        }
+
+        h1 {
+            text-align: center;
+            color:blueviolet;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
-<body background="img/portada.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;">
+<body>
     <h1>Contactanos</h1>
     <form method="post" action="mensajeria.php" enctype="text/plain">
         <fieldset>
-            <legend>
-                Informacion del Visitante
-            </legend>
-            
+            <legend>Informacion del Visitante</legend>
+
             <label for="usuario">Nombre del Usuario:</label>
-            <input type="text" name="usuario" id="usuario" maxlength="12"
-            placeholder="Usuario" size="12" title="Nombre de usuario"/></br>
-            
+            <input type="text" name="usuario" id="usuario" maxlength="12" placeholder="Usuario" size="12"
+                title="Nombre de usuario" />
+
             <label for="Nombre">Nombre</label>
-            <input required type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Nombre"/></br>
-            
+            <input required type="text" name="Nombre" id="Nombre" maxlength="25" placeholder="Nombre" />
+
             <label for="Apellido Paterno">Apellido Paterno</label>
-            <input type="text" name="Ap" id="Ap" maxlength="30" placeholder="Apellido Paterno"/></br>
-            
+            <input type="text" name="Ap" id="Ap" maxlength="30" placeholder="Apellido Paterno" />
+
             <label for="Apellido Materno">Apellido Materno</label>
-            <input type="text" name="Am" id="Am" maxlength="30" placeholder="Apellido Materno"/></br>
-            
+            <input type="text" name="Am" id="Am" maxlength="30" placeholder="Apellido Materno" />
+
             <label for="email">Correo Electronico:</label>
-            <input required type="email" name="correo" id="correo" placeholder="Correo Email"><br>
-            
+            <input required type="email" name="correo" id="correo" placeholder="Correo Email">
+
             <label for="pass">Contraseña:</label>
-            <input type="password" name="pass" maxlength="15" id="pass" required placeholder="Contraseña"/></br>
-            
+            <input type="password" name="pass" maxlength="15" id="pass" required placeholder="Contraseña" />
+
             <label for="sugiere">Sugerencias:</label><br>
-            <textarea required name="sugiere" id="sugiere" cols="30" rows="10"></textarea><br>
+            <textarea required name="sugiere" id="sugiere" cols="30" rows="10"></textarea>
 
             <label for="Calif">Califica el servicio</label>
-            <input type="range" id="calif" name="calif" min="0" max="10" value="5"> <br>
+            <input type="range" id="calif" name="calif" min="0" max="10" value="5">
 
-            <h3>Indique su genero</h3>
-            <input type="radio" name="genero" id="genero" value="F">
-            <label for="genero">Femenino</label><br>
+            <h3>Indique su género</h3>
+            <input type="radio" name="genero" id="generoFemenino" value="F">
+            <label for="generoFemenino">Femenino</label><br>
 
-            <input type="radio" name="genero" id="genero" value="M">
-            <label for="genero">Masculino</label><br>
+            <input type="radio" name="genero" id="generoMasculino" value="M">
+            <label for="generoMasculino">Masculino</label><br>
 
-            <th><input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
-            <input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario"><br>
+            <input type="submit" name="enviar" id="enviar" value="Enviar Formulario">
+            <input type="reset" name="Borrar" id="Borrar" value="Borrar Formulario">
         </fieldset>
     </form>
 </body>
+
 </html>
+
+            
+            
