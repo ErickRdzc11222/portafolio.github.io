@@ -1,33 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Ayuda para Restaurantes en San Luis Potosí</title>
+    <meta charset="UTF-8">
+    <title>Ayuda para Restaurantes en San Luis Potosí</title>
     <link rel="icon" type="image/jpg" href="img/logo.jpg"/>
+    <style>
+        body {
+            background-image: url("img/portada.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color:#0066cc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color:darkorange;
+        }
+
+        li:hover .answer {
+            display: block;
+        }
+
+        a {
+            color:crimson;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body background="img/portada.jpg" style="background-repeat: no-repeat;background-size: 100%; background-attachment: fixed;">
-	<h1>Ayuda para Restaurantes en San Luis Potosí</h1>
+<body>
+    <h1>Ayuda para Restaurantes en San Luis Potosí</h1>
 
-	<h2>Preguntas Frecuentes</h2>
-	<p>Aquí están algunas preguntas frecuentes que los clientes pueden tener al visitar un restaurante:</p>
-	<ul>
-		<li>¿Tienen opciones vegetarianas o veganas en el menú?</li>
-		<li>¿Cuál es el horario de servicio?</li>
-		<li>¿Se aceptan tarjetas de crédito o débito?</li>
-		<li>¿Hay opciones sin gluten en el menú?</li>
-		<li>¿Se aceptan reservaciones?</li>
-		<li>¿Cuál es la política de cancelación de reservaciones?</li>
-		<li>¿Se permite fumar?</li>
-		<li>¿Se permite llevar bebidas alcohólicas?</li>
-	</ul>
-
+    <h2>Preguntas Frecuentes</h2>
+    <p>Aquí están algunas preguntas frecuentes que los clientes pueden tener al visitar un restaurante:</p>
+    <ul>
+        <li>¿Tienen opciones vegetarianas o veganas en el menú?
+            <div class="answer">Sí, ofrecemos opciones vegetarianas y veganas en nuestro menú. Tenemos una variedad de platos sin carne que satisfarán tus necesidades.</div>
+        </li>
+        <li>¿Cuál es el horario de servicio?
+            <div class="answer">Nuestro horario de servicio es de lunes a viernes de 12:00 p.m. a 10:00 p.m. y los fines de semana de 11:00 a.m. a 11:00 p.m.</div>
+        </li>
+        <li>¿Se aceptan tarjetas de crédito o débito?
+            <div class="answer">Sí, aceptamos tarjetas de crédito y débito como forma de pago en nuestro restaurante.</div>
+        </li>
+        <li>¿Hay opciones sin gluten en el menú?
+            <div class="answer">Sí, tenemos opciones sin gluten en nuestro menú. Nos preocupamos por atender las necesidades dietéticas de nuestros clientes.</div>
+        </li>
+        <li>¿Se aceptan reservaciones?
+            <div class="answer">Sí, aceptamos reservaciones. Te recomendamos que hagas una reserva con anticipación para asegurar tu lugar.</div>
+        </li>
+        <li>¿Cuál es la política de cancelación de reservaciones?
+            <div class="answer">Si necesitas cancelar tu reserva, te pedimos que lo hagas con al menos 24 horas de anticipación para que podamos ajustar nuestra disponibilidad.</div>
+        </li>
+        <li>¿Se permite fumar?
+            <div class="answer">No se permite fumar en nuestro restaurante. Cumplimos con las regulaciones locales y nos esforzamos por brindar un ambiente saludable para todos nuestros clientes.</div>
+        </li>
+        <li>¿Se permite llevar bebidas alcohólicas?
+            <div class="answer">No se permite traer bebidas alcohólicas de fuera al restaurante. Contamos con una amplia selección de bebidas disponibles en nuestro menú para acompañar tu comida.</div>
+        </li>
+    </ul>
 	<h2>Grupos de Ayuda a Críticos Profesionales de Restaurantes</h2>
 	<p>Estos grupos pueden ayudar a los críticos de restaurantes a conectarse con otros expertos y compartir sus experiencias:</p>
 	<ul>
 		<li><a href="https://www.facebook.com/groups/ACG.SLP/">Asociación de Críticos Gastronómicos de San Luis Potosí</a></li>
-		<li><a href="https://www.facebook.com/groups/633835746760564">Criticos de San Luis Potosi</a></li>
+		<li><a href="https://www.facebook.com/groups/633835746760564">Críticos de San Luis Potosí</a></li>
 	</ul>
-
+	
 	<h2>Redes Sociales y Sitios de Reseñas de Restaurantes</h2>
 	<p>Estos son algunos sitios web y redes sociales donde se puede encontrar información y reseñas de restaurantes en San Luis Potosí:</p>
 	<ul>
@@ -36,4 +102,4 @@
 		<li><a href="https://www.yelp.com.mx/san-luis-potosi">Yelp: Restaurantes en San Luis Potosí</a></li>
 	</ul>
 </body>
-</html>
+</html>	
