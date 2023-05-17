@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #333;
+    margin: 0;
+  }
+  
+  header h3 {
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Estilos de la barra de navegación */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos de las secciones */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  section p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Estilos del formulario de contacto */
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"],
+  form input[type="reset"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover,
+  form input[type="reset"]:hover {
+    background-color: #666;
+  }
+  
+  /* Estilos de enlaces */
+  a {
+    color: #333;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img{
+    width: 300px;
+    height: 300px;
+  }
